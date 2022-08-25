@@ -7,7 +7,6 @@ const port1 = 2000
 
 app1.use(express.urlencoded({ extended: true }))
 app1.use(express.static(path.join(__dirname, 'public')))
-//+8926lahair,LittleOrt D9m1l0l9
 app1.post('/adminLog.html', (req, res) => {
 
     var check = ["AdeSam", "ForAllNations"]
