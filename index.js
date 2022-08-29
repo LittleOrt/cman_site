@@ -2,7 +2,7 @@ const express = require('express')
 const app1 = express()
 const path = require('path')
 const fs = require('fs')
-const port = process.env.PORT
+const port = process.env.PORT||5000
 
 
 app1.use(express.urlencoded({ extended: true }))
