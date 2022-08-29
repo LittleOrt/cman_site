@@ -24,8 +24,7 @@ app1.post('/adminLog.html', (req, res) => {
         res.send('Login Details Incorrect')
     }
 })
-app1.listen(process.env.PORT||2000, () => {
-    console.log(`Server listening on ${PORT}`)
+app1.listen(process.env.PORT||2000)
 })
 
 
