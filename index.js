@@ -2,7 +2,7 @@ const express = require('express')
 const app1 = express()
 const path = require('path')
 const fs = require('fs')
-
+const port = process.env.PORT||2000
 
 
 app1.use(express.urlencoded({ extended: true }))
@@ -24,7 +24,7 @@ app1.post('/adminLog.html', (req, res) => {
         res.send('Login Details Incorrect')
     }
 })
-app1.listen(process.env.PORT||2000)
+app1.listen(port)
 })
 
 
